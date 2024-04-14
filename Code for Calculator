@@ -1,0 +1,19 @@
+# Функция для выполнения математических операций
+def calculate(operation, num1, num2):
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == ' * ':
+        return num1  *  num2
+    elif operation == '/':
+        return num1 / num2
+
+# Ввод данных от пользователя
+operation = input("Выберите операцию (+, -,  * , /): ")
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+# Выполнение операции и вывод результата
+result = calculate(operation, num1, num2)
+print(f"Результат {operation} равен {result}")
